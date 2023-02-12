@@ -54,21 +54,6 @@ const Layout = (props: any) => {
 					</div>
 				}
 				
-				{ props.selected == 'illust' && 
-					<div className="menuItemsSelected">
-						<a href="./illust">
-							<Image src="/images/illust_selected.png" alt="illustの選択中アイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				{ props.selected != 'illust' && 
-					<div className="menuItems">
-						<a href="./illust">
-							<Image src="/images/illust.png" alt="illustのアイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				
 				{ props.selected == 'work' && 
 					<div className="menuItemsSelected">
 						<a href="./work">
@@ -99,11 +84,6 @@ const Layout = (props: any) => {
 					</div>
 				}
 				
-				<div className="menuItems">
-					<a href="https://marshmallow-qa.com/sw_ts_k" target="_blank" rel="noopener noreferrer">
-						<Image src="/images/marshmallow_w_trans.png" alt="marshmallowのアイコン" layout="fill" objectFit="cover" />
-					</a>
-				</div>
 			</div>
 			<div className="topScrollButton">
 				<a href="#">
@@ -118,20 +98,14 @@ const Layout = (props: any) => {
 					<a href="./about">ABOUT</a>
 				</div>
 				<div className="hamburgerMenuItems">
-					<a href="./illust">ILLUSTRATE</a>
-				</div>
-				<div className="hamburgerMenuItems">
 					<a href="./work">WORK</a>
 				</div>
 				<div className="hamburgerMenuItems">
 					<a href="./event">EVENT</a>
 				</div>
-				<div className="hamburgerMenuItems">
-					<a href="https://marshmallow-qa.com/sw_ts_k" target="_blank" rel="noopener noreferrer">MARSHMALLOW</a>
-				</div>
 			</div>
 			<footer>
-				<a href="./">sw_ts_k</a>
+				<a href="./">tk-profile</a>
 			</footer>
 		</>
 	)
