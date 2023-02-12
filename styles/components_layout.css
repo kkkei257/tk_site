@@ -1,0 +1,201 @@
+/* z-index: ハンバーガーメニューアイコン(101) > ハンバーガーメニュー(100) > トップへ戻るボタン・menuBar(99) > header(1) > その他要素 */
+@media screen and (min-width: 960px) {
+	
+	header {
+		width: 100%;
+		color: black;
+		line-height: 5vh; /* heightの値に応じて調整する。 */
+		height: 6vh;
+		padding: 3vh 0 0 2rem;
+		text-align: center;
+		position: absolute; /*←絶対位置*/
+		display: flex; /* トップメニューのアイコンとテキストを横並びに表示する。 */
+		z-index: 1;
+	}
+	
+	header img {
+		border-radius: 50%; /* header内の画像を円形表示する。 */
+	}
+	
+	.top_menu_text {
+		font-family: 'Noto Sans JP', sans-serif;
+		margin-left: 10px;
+		display: none; /* 名前を表示しない。 */
+	}
+	
+	.top_menu_icon {
+		position: relative; /* Imageにてfillの対象となる要素にはこの記述が必要。 */
+		width: 40px;
+		height: 40px;
+	}
+	
+	.container {
+		padding: 0 2rem; /* 左右に余白を設ける */
+		padding-bottom: 10px; /*←footerの高さ*/
+		min-height: 85vh; /* 100-(headerの高さ+footerの高さ) */
+		position: relative; /*←相対位置*/
+		padding-top: 50px;
+		box-sizing: border-box; /*←全て含めてmin-height:100vhに*/
+	}
+	
+	.menuBar {
+		bottom: 0;
+		height: 7vh;
+		min-height: 40px; /* 上下幅を小さくしても一定の大きさを保たせる。 */
+		width: 100%;
+		background-color: white;
+		position: fixed;
+		position: -webkit-fixed;
+		z-index: 99;
+		display: flex;
+	 	justify-content: space-between;
+	 	flex-wrap: wrap;
+	 	padding-left: 30vw; /* menuBarの左右に余白を設ける */
+	 	padding-right: 30vw; /* menuBarの左右に余白を設ける */
+	 	box-shadow: 0px -1px 8px rgba(0,0,0,0.2); /* menuBarに影をつける。 */
+	}
+	
+	.menuItems {
+		height: 22px;
+		width: 22px;
+		margin: auto;
+		position: relative;
+	}
+	
+	.menuItemsSelected {
+		height: 22px;
+		width: 22px;
+		margin: auto;
+		position: relative;
+	}
+	
+	.topScrollButton {
+		bottom: 9vh;
+		right: 30px;
+		height: 30px;
+		width: 30px;
+		position: fixed;
+		position: -webkit-fixed;
+		z-index: 99;
+		display: flex;
+		opacity: 0.6;
+	}
+	
+	footer {
+		width: 100%;
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 30px 0 11vh; /* menuBar分下に余白を設ける */
+	}
+	
+	/* コンテンツの背景色。読み込み時に表示される色。 */
+	.content_loading {
+		background-color: white;
+	}
+	
+	/* ハンバーガーメニューを表示する際に用いる。 */
+	.visible {
+		transition: opacity 0.3s, visibility 0.3s; /* フェードインエフェクト */
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	/* ハンバーガーメニューを非表示する際に用いる。 */
+	.hidden {		
+		transition: opacity 0.3s, visibility 0.3s; /* フェードアウトエフェクト */
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	/* 最初にページを読み込んだ際に一瞬ハンバーガーメニューが表示されてしまうのを防ぐために使用。 */
+	.first {
+		transition: opacity 0s, visibility 0s; /* フェードアウトエフェクト */
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	/* ハンバーガーメニューのアイコン */
+	.menuButton {
+		top: 3vh;
+		right: 30px;
+		height: 30px;
+		width: 30px;
+		position: fixed;
+		position: -webkit-fixed;
+		z-index: 101;
+		display: flex;
+		opacity: 0.6;
+	}
+	
+	.hamburgerMenu {
+		position: fixed;
+		overflow: auto;
+		padding-top: 15vh;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.9);
+		z-index: 100;
+	}
+	
+	/* ページ読み込み時にハンバーガーメニューが一瞬表示されてしまうのを防ぐ。 */
+	.hamburgerMenu.hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	.hamburgerMenuItems {
+		font-size: 20px;
+		color: black;
+		text-align: center;
+		margin: auto; /* ハンバーガーメニューの左右中央に配置する。 */
+		margin-bottom: 20px;
+		height: 8vh;
+		line-height: 8vh; /* 文字を上下中央に配置するための設定。heightと同じ値を設定する。 */
+		width: 40%;
+	}
+	
+	.hamburgerMenuItems a {
+		display: block; /* div要素全体にaタグのリンクをはる。 */
+		position: relative;
+		text-decoration: none;		
+	}
+	
+	.hamburgerMenuItems a:before {
+		content: "";
+		position: absolute;
+		left: 25%;
+		bottom: 0px;
+		width: 50%;
+		height: 1px;
+		background: #555;
+		transform: scale(0, 1);
+		transition: 0.4s;
+	}
+	
+	.hamburgerMenuItems a:hover:before {
+		transform: scale(1);		
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.menuBar {
+			bottom: 0;
+			height: 7vh;
+			min-height: 40px; /* 上下幅を小さくしても一定の大きさを保たせる。 */
+			width: 100%;
+			background-color: black;
+			position: fixed;
+			position: -webkit-fixed;
+			z-index: 99;
+			display: flex;
+		 	justify-content: space-between;
+		 	flex-wrap: wrap;
+		 	padding-left: 30vw; /* menuBarの左右に余白を設ける */
+		 	padding-right: 30vw; /* menuBarの左右に余白を設ける */
+		 	box-shadow: 0px -1px 8px rgba(255,255,255,0.3); /* menuBarに影をつける。 */
+		}
+	}
+	
+}

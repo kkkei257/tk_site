@@ -1,0 +1,62 @@
+/* tablet 481px〜959px */
+@media screen and (min-width: 481px) and (max-width: 959px) {
+
+	.illust_contents_container {
+		display: flex;
+		flex-flow: column;
+		padding: 5vh 1rem 0 1rem;
+	}
+	
+	.illust_menu_title {
+		font-family: 'Alegreya Sans SC', sans-serif;
+		width: 100%;
+		height: 5vh;
+		text-align: center;
+		font-size: 17pt;
+		margin-bottom: 3vh;
+	}
+	
+	.illust_gallery {
+		display: flex;
+	 	/*justify-content: space-between;*/ /* 3列並びの場合この設定があると3n+2個の場合に変な空白が生じる。 */
+	 	flex-wrap: wrap;
+	 	margin-bottom: 10px;
+	}
+	
+	.illust_content {
+		position: relative;
+		height: 30vh;
+		width: 33%;
+		margin-bottom: 10px;
+		
+		margin-left: 0.15%; /* justify-content: space-between; を削除する代わりの記述。 */
+		margin-right: 0.15%; /* justify-content: space-between; を削除する代わりの記述。 */
+		
+		/* イラスト上に表示するアイコンを上下中央に配置するための記述。 */
+		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+	}
+	
+	/* 通常のイラストにはアイコンを表示しない。 */
+	.noIcon {
+		display: none;
+	}
+	
+	/* gif画像には再生可能アイコンを表示する。 */
+	.playGif {
+		position: relative;
+		height: 45px;
+		width: 45px;
+		opacity: 0.8;
+	}
+	
+	/* 外部リンク制定が存在する場合には音楽再生可能アイコンを表示する。 */
+	.playMusic {
+		position: relative;
+		height: 45px;
+		width: 45px;
+		opacity: 0.8;
+	}
+
+}

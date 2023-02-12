@@ -1,0 +1,33 @@
+/* sp */
+@media screen and (max-width: 480px) {
+
+	.work_contents_container {
+		display: flex;
+		flex-flow: column;
+		padding: 5vh 1rem 0 1rem;
+	}
+	
+	.work_menu_title {
+		font-family: 'Alegreya Sans SC', sans-serif;
+		width: 100%;
+		height: 5vh;
+		text-align: center;
+		font-size: 17pt;
+		margin-bottom: 3vh;
+	}
+	
+	.work_gallery {
+		display: flex;
+	 	justify-content: space-between;
+	 	flex-wrap: wrap;
+	 	margin-bottom: 10px;
+	}
+	
+	.work_content {
+		position: relative;
+		height: 30vh;
+		width: 49%;
+		margin-bottom: 10px;
+	}
+
+}

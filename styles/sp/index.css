@@ -1,0 +1,94 @@
+/* sp */
+@media screen and (max-width: 480px) {
+		
+	.index_contents_container {
+		display: flex;
+		flex-flow: column;
+		padding-top: 0vh; /* spでは上部に余白を設けない。 */
+	}
+	
+	.index_top_gallery {
+		display: flex;
+	 	justify-content: space-between;
+	 	flex-wrap: wrap;
+	 	margin-bottom: 5vh;	
+	}
+	
+	.index_top_illust_pc {
+		display: none;
+	}
+	
+	.index_top_illust_sp {
+		position: relative;  /* Imageにてfillの対象となる要素にはこの記述が必要。 */
+		height: 75vh;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	.index_gallery {
+		
+	}
+	
+	.index_content {
+		display: flex;
+	 	flex-flow: column;
+		height: 60vh;
+		width: 100%;
+		margin: 10vh 0 15vh 0;
+		padding: 0 2rem 0 2rem; /* spの場合一番上の画像に余白を設けないようにするため、ここで左右に余白を設定する。 */
+	}
+	
+	.index_content_illust {
+		position: relative;  /* Imageにてfillの対象となる要素にはこの記述が必要。 */
+		height: 65%; /* 画像と空白とテキスト部分の間隔調整用。 */
+		width: 100%;
+	}
+	
+	.index_content_space {
+		position: relative;
+		height: 0%; /* 画像と空白とテキスト部分の間隔調整用。 */
+		width: 100%;
+	}
+	
+	.index_content_text {
+		position: relative;
+		display: flex;
+	 	flex-flow: column; /* テキスト内の要素を縦並びにする。 */
+		height: 35%; /* 画像と空白とテキスト部分の間隔調整用。 */
+		width: 100%;
+		margin-top: 3vh; /* テキスト内の要素を上下中央に配置するための余白指定。 */
+		text-align: justify;
+	}
+	
+	.index_content_text_title {
+		font-size: 18pt;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	}
+	
+	.index_content_text_explain {	
+		margin-bottom: 3vh;
+	}
+	
+	.index_content_text_detail {	
+		height: 6vh;
+		line-height: 6vh;
+		width: 70%;
+		text-align: center;
+		border: 1px solid;
+	}
+	
+	.index_content_text_detail a {	
+		display: block; /* 領域いっぱいにリンクを貼る。 */
+	}
+	
+	.index_content_link {
+		margin-bottom: 5vh;
+		text-align: center;
+	}
+	
+	.index_content_link a {
+		color: #4682b4;
+	}
+	
+}

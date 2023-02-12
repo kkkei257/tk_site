@@ -1,0 +1,140 @@
+import Image from 'next/image'
+import React, {useState} from 'react'
+
+const Layout = (props: any) => {
+	// visibleの値を変えることでメニューを表示・非表示させる
+	const [visible, setVisible] = useState('hidden')
+	
+	// 最初にページを読み込んだ際に一瞬ハンバーガーメニューが表示されてしまうのを防ぐためのフラグ。
+	const [isFirst, setFirstLoadState] = useState('first');
+	
+	// 右上のメニューをクリックで実行される
+	const toggleHamburger = () => {
+		// クリックしたらフラグの内容を空文字にする（= .firstのcssが適用されなくなる）。
+		setFirstLoadState(isFirst !== '' ? '' : '');
+		setVisible(visible === 'visible' ? 'hidden' : 'visible');
+	}
+	
+	return (
+		<>
+			<header>
+				<div className="top_menu_icon">
+					<a href="./">
+						<Image src="/blog/blog_icon.png" alt="blogのアイコン" layout="fill" objectFit="cover" />
+					</a>
+				</div>
+				<div className="top_menu_text">sw_ts_k</div>
+			</header>
+			{ visible == 'hidden' && 
+				<div className="menuButton">
+					<Image onClick={toggleHamburger} src="/images/menu.png" alt="menuアイコン" layout="fill" objectFit="cover" />
+				</div>
+			}
+			{ visible == 'visible' &&
+				<div className="menuButton">
+					<Image onClick={toggleHamburger} src="/images/close.png" alt="closeアイコン" layout="fill" objectFit="cover" />
+				</div>
+			}
+			<div className="container">
+				{props.children}
+			</div>
+			<div className="menuBar">
+				{ props.selected == 'about' && 
+					<div className="menuItemsSelected">
+						<a href="./about">
+							<Image src="/images/about_selected.png" alt="aboutの選択中アイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				{ props.selected != 'about' && 
+					<div className="menuItems">
+						<a href="./about">
+							<Image src="/images/about.png" alt="aboutのアイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				
+				{ props.selected == 'illust' && 
+					<div className="menuItemsSelected">
+						<a href="./illust">
+							<Image src="/images/illust_selected.png" alt="illustの選択中アイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				{ props.selected != 'illust' && 
+					<div className="menuItems">
+						<a href="./illust">
+							<Image src="/images/illust.png" alt="illustのアイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				
+				{ props.selected == 'work' && 
+					<div className="menuItemsSelected">
+						<a href="./work">
+							<Image src="/images/work_selected.png" alt="workの選択中アイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				{ props.selected != 'work' && 
+					<div className="menuItems">
+						<a href="./work">
+							<Image src="/images/work.png" alt="workのアイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				
+				{ props.selected == 'event' && 
+					<div className="menuItemsSelected">
+						<a href="./event">
+							<Image src="/images/event_selected.png" alt="eventの選択中アイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				{ props.selected != 'event' && 
+					<div className="menuItems">
+						<a href="./event">
+							<Image src="/images/event.png" alt="eventのアイコン" layout="fill" objectFit="cover" />
+						</a>
+					</div>
+				}
+				
+				<div className="menuItems">
+					<a href="https://marshmallow-qa.com/sw_ts_k" target="_blank" rel="noopener noreferrer">
+						<Image src="/images/marshmallow_w_trans.png" alt="marshmallowのアイコン" layout="fill" objectFit="cover" />
+					</a>
+				</div>
+			</div>
+			<div className="topScrollButton">
+				<a href="#">
+					<Image src="/images/top.png" alt="topへ戻るアイコン" layout="fill" objectFit="cover" />
+				</a>
+			</div>
+			<div onClick={toggleHamburger} className={`${visible} ${isFirst} hamburgerMenu`}>
+				<div className="hamburgerMenuItems">
+					<a href="./">TOP</a>
+				</div>
+				<div className="hamburgerMenuItems">
+					<a href="./about">ABOUT</a>
+				</div>
+				<div className="hamburgerMenuItems">
+					<a href="./illust">ILLUSTRATE</a>
+				</div>
+				<div className="hamburgerMenuItems">
+					<a href="./work">WORK</a>
+				</div>
+				<div className="hamburgerMenuItems">
+					<a href="./event">EVENT</a>
+				</div>
+				<div className="hamburgerMenuItems">
+					<a href="https://marshmallow-qa.com/sw_ts_k" target="_blank" rel="noopener noreferrer">MARSHMALLOW</a>
+				</div>
+			</div>
+			<footer>
+				<a href="./">sw_ts_k</a>
+			</footer>
+		</>
+	)
+}
+
+export default Layout
