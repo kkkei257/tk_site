@@ -13,8 +13,8 @@ export default function Home() {
 	const works = [
 		{
 			src: "/work/work4-1.png",
-			title: "実験で使用したSNSプラットフォーム（JavaScript×Firebase）",
-			alt: "実験で使用したSNSプラットフォーム（JavaScript×Firebase）"
+			title: "実験用に作成したSNSプラットフォーム（JavaScript×Firebase）",
+			alt: "実験用に作成したSNSプラットフォーム（JavaScript×Firebase）"
 		},
 		{
 			src: "/work/work3-1.png",
