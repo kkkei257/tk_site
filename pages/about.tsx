@@ -53,13 +53,14 @@ export default function Home() {
 							<Image src="/blog/blog_icon.png" alt="blogのアイコン" width={50} height={50} />
 						</div>
 						<div className="about_profile_content_text">
-							ケイです。<b>ソニック</b> / <b>ポケモン</b> / <b>マッドラットデッド</b> / <b>オッドタクシー</b> が大好きです。ケモノとても良き_(:3 」∠)_<br/>
+							はじめまして、加瀬と申します。2021年4月からHR領域のWeb系企業でWeb開発エンジニアをしています。<br/>
 							<br/>
-							ソニックのキャラ全員大好きですが特にテイルスくんを推してます。<br />
-							オッドタクシーのキャラでは田中と今井が特に好きです。<br />
+							大学院ではSNS関連の研究（デマの拡散問題に関するテーマ）をしていました。<br />
+							仕事では主に自社Webサービスのバックエンドの開発に従事しています。<br />
+							本サイトは勉強を兼ねてNext.jsで作成しました。<br />
 							<br/>
 							好きなこと：<span className="about_profile_content_text_br"><br/></span>
-							推しを推すこと。映画館で映画を観る。気ままに出歩いたり写真を撮ったり。<br />
+							モノを作ること。映画館で映画を観る。気ままに出歩いたり写真を撮ったり。<br />
 						</div>
 					</div>
 					<div className="about_sns">
@@ -68,8 +69,13 @@ export default function Home() {
 						</div>
 						<div className="about_sns_content_icon">
 							<div className="about_sns_content_icon_items">
-								<a href="https://twitter.com/sw_ts_k" target="_blank" rel="noopener noreferrer">
-									<Image src="/sns/Twitter social icons - circle - blue.png" alt="Twitterのアイコン" layout="fill" objectFit="cover" />
+								<a href="https://www.wantedly.com/id/takahisa_kase" target="_blank" rel="noopener noreferrer">
+									<Image src="/sns/Wantedly_Mark_LightBG.png" alt="Wantedlyのアイコン" layout="fill" objectFit="cover" />
+								</a>
+							</div>
+							<div className="about_sns_content_icon_items">
+								<a href="https://www.linkedin.com/in/takahisa-kase-2b1302175/" target="_blank" rel="noopener noreferrer">
+									<Image src="/sns/LI-In-Bug.png" alt="Linkedinのアイコン" layout="fill" objectFit="cover" />
 								</a>
 							</div>
 							<div className="about_sns_content_icon_items">
@@ -78,20 +84,12 @@ export default function Home() {
 								</a>
 							</div>
 							<div className="about_sns_content_icon_items">
-								<a href="https://kkkei257.blogspot.com/" target="_blank" rel="noopener noreferrer">
-									<Image src="/sns/blogger_icon.png" alt="bloggerのアイコン" layout="fill" objectFit="cover" />
+								<a href="https://github.com/kkkei257" target="_blank" rel="noopener noreferrer">
+									<Image src="/sns/github-mark.png" alt="githubのアイコン" layout="fill" objectFit="cover" />
 								</a>
 							</div>
-							<div className="about_sns_content_icon_items">
-								<a href="https://poipiku.com/1252401/" target="_blank" rel="noopener noreferrer">
-									<Image src="/sns/poipiku_w_trans.png" alt="poipikuのアイコン" layout="fill" objectFit="cover" />
-								</a>
-							</div>
-							<div className="about_sns_content_icon_items">
-								<a href="https://www.instagram.com/kkkei257/" target="_blank" rel="noopener noreferrer">
-							<Image src="/sns/Instagram_Glyph_Gradient.png" alt="Instagramのアイコン" layout="fill" objectFit="cover" />
-						</a>
-							</div>
+							{/* アイコンの間隔調整のために空白を設ける。 */}
+							<div className="about_sns_content_icon_items"></div>
 						</div>
 					</div>
 					<div className="about_favorite_contents">
@@ -99,16 +97,11 @@ export default function Home() {
 							<Image src="/images/book.png" alt="twitterのアイコン" width={50} height={50} />
 						</div>
 						<div className="about_favorite_content_text">
-							その他好きな作品：
+							その他のプロフィール：
 							<ul>
-								<li>ジョジョ(7部まで読んだ)</li>
-								<li>メイドインアビス</li>
-								<li>魔人探偵脳噛ネウロ</li>
-								<li>金色のガッシュ</li>
-								<li>リコリス・リコイル</li>
-								<li>鬼滅の刃</li>
-								<li>ヒロアカ</li>
-								<li>テニスの王子様</li>
+								<li>好きな飲み物：カフェラテ</li>
+								<li>最近始めた趣味：アナログレコードを聴く、ミラーレス一眼で写真を撮る</li>
+								<li>得意なこと：気になることを徹底的に調べる、知識や経験を資料化する</li>
 							</ul>
 						</div>
 					</div>

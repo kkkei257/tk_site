@@ -12,11 +12,6 @@ export default function Home() {
 	// 上から順に読み込まれる。
 	const works = [
 		{
-			src: "/work/work5-1.JPG",
-			title: "プロフィール旧サイト（HTML×JavaScript）",
-			alt: "プロフィール旧サイト（HTML×JavaScript）"
-		},
-		{
 			src: "/work/work4-1.png",
 			title: "実験で使用したSNSプラットフォーム（JavaScript×Firebase）",
 			alt: "実験で使用したSNSプラットフォーム（JavaScript×Firebase）"

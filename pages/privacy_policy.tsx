@@ -52,7 +52,7 @@ export default function Home() {
 							①個人情報の利用目的
 						</div>
 						<div className="privacy_policy_contents_text">
-							ケイ(@sw_ts_k)のプロフィールページ(以下当サイト)では、利用者様の同意のもと、以下に掲げる利用目的を達成するために必要な範囲内で、
+							加瀬のプロフィールページ(以下当サイト)では、利用者様の同意のもと、以下に掲げる利用目的を達成するために必要な範囲内で、
 							利用者様のお名前、メールアドレスその他の個人情報を取得することがあります。
 						</div>
 						<div className="privacy_policy_contents_text">
@@ -163,7 +163,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="privacy_policy_contents">
-						<div className="enactment_date">制定日：2023年01月21日</div>
+						<div className="enactment_date">制定日：2023年02月14日</div>
 					</div>
 				</div>
 			</Layout>

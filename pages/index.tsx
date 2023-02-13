@@ -63,7 +63,7 @@ export default function Home() {
 							<div className="index_content_space"></div>
 							<div className="index_content_text">
 								<div className="index_content_text_title">ABOUT</div>
-								<div className="index_content_text_explain">自己紹介。好きな作品などを書いています。</div>
+								<div className="index_content_text_explain">自己紹介。趣味などを書いています。</div>
 								<div className="index_content_text_detail">
 									<a href="./about">プロフィールを表示</a>
 								</div>
@@ -84,7 +84,7 @@ export default function Home() {
 						</div>
 						<div className="index_content">
 							<div className="index_content_illust content_loading">
-								<Image src="/event/event20220626.jpeg" alt="ソニック公式Twitterオフ会" layout="fill" objectFit="cover" />
+								<Image src="/event/event20200221.jpeg" alt="2020/02/21 スノボ旅行" layout="fill" objectFit="cover" />
 							</div>
 							<div className="index_content_space"></div>
 							<div className="index_content_text">
