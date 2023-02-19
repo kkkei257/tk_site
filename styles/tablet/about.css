@@ -110,5 +110,25 @@
 		line-height: 1.5; /* 文の行高 */
  		padding: 0.2em 0; /* 前後の文との余白 */
 	}
+	
+	/* ライトモード時に表示させたい要素 */
+	.light {
+		display: block;
+	}
+	
+	/* ダークモード時に表示させたい要素 */
+	.dark {
+		display: none;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.light {
+			display: none;
+		}
+		
+		.dark {
+			display: block;
+		}
+	}
 
 }

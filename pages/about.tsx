@@ -68,11 +68,19 @@ export default function Home() {
 							
 						</div>
 						<div className="about_sns_content_icon">
-							<div className="about_sns_content_icon_items">
+							{/* ライトモード */}
+							<div className="about_sns_content_icon_items light">
 								<a href="https://www.wantedly.com/id/takahisa_kase" target="_blank" rel="noopener noreferrer">
 									<Image src="/sns/Wantedly_Mark_LightBG.png" alt="Wantedlyのアイコン" layout="fill" objectFit="cover" />
 								</a>
 							</div>
+							{/* ダークモード */}
+							<div className="about_sns_content_icon_items dark">
+								<a href="https://www.wantedly.com/id/takahisa_kase" target="_blank" rel="noopener noreferrer">
+									<Image src="/sns/Wantedly_Mark_DarkBG.png" alt="Wantedlyのアイコン" layout="fill" objectFit="cover" />
+								</a>
+							</div>
+							
 							<div className="about_sns_content_icon_items">
 								<a href="https://www.linkedin.com/in/takahisa-kase-2b1302175/" target="_blank" rel="noopener noreferrer">
 									<Image src="/sns/LI-In-Bug.png" alt="Linkedinのアイコン" layout="fill" objectFit="cover" />
@@ -83,13 +91,25 @@ export default function Home() {
 									<Image src="/sns/qiitan_w_trans.png" alt="qiitaのアイコン" layout="fill" objectFit="cover" />
 								</a>
 							</div>
-							<div className="about_sns_content_icon_items">
+							
+							{/* ライトモード */}
+							<div className="about_sns_content_icon_items light">
 								<a href="https://github.com/kkkei257" target="_blank" rel="noopener noreferrer">
 									<Image src="/sns/github-mark.png" alt="githubのアイコン" layout="fill" objectFit="cover" />
 								</a>
 							</div>
-							{/* アイコンの間隔調整のために空白を設ける。 */}
-							<div className="about_sns_content_icon_items"></div>
+							{/* ダークモード */}
+							<div className="about_sns_content_icon_items dark">
+								<a href="https://github.com/kkkei257" target="_blank" rel="noopener noreferrer">
+									<Image src="/sns/github-mark-white.png" alt="githubのアイコン" layout="fill" objectFit="cover" />
+								</a>
+							</div>
+							
+							<div className="about_sns_content_icon_items">
+								<a href="https://uec.repo.nii.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9936&item_no=1&page_id=13&block_id=21" target="_blank" rel="noopener noreferrer">
+									<Image src="/images/paper.png" alt="論文のアイコン" layout="fill" objectFit="cover" />
+								</a>
+							</div>
 						</div>
 					</div>
 					<div className="about_favorite_contents">
@@ -99,9 +119,15 @@ export default function Home() {
 						<div className="about_favorite_content_text">
 							その他のプロフィール：
 							<ul>
-								<li>好きな飲み物：カフェラテ</li>
-								<li>最近始めた趣味：アナログレコードを聴く、ミラーレス一眼で写真を撮る</li>
-								<li>得意なこと：気になることを徹底的に調べる、知識や経験を資料化する</li>
+								<li>好きな飲み物：<span className="about_profile_content_text_br"><br/>
+									</span>カフェラテ、ホットチョコレート
+								</li>
+								<li>最近始めた趣味：<span className="about_profile_content_text_br"><br/></span>
+									アナログレコードを聴く、ミラーレス一眼で写真を撮る
+								</li>
+								<li>得意なこと：<span className="about_profile_content_text_br"><br/></span>
+									気になることを念入りに調べる、知識や経験を資料化する
+								</li>
 							</ul>
 						</div>
 					</div>
