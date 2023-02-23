@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 	const site_index_title = "tkのプロフィール -TOP-";
 	const site_index_description = "tkのプロフィール：TOPページ";
-	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.png";
 	const site_index_url = "https://tk-profile.netlify.app/";
 	
 	return (

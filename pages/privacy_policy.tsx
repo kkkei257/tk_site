@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 	const site_privacy_policy_title = "tkのプロフィール -PRIVACY POLICY-";
 	const site_privacy_policy_description = "tkのプロフィール：プライバシーポリシーページ。";
-	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.png";
 	const site_privacy_policy_url = "https://tk-profile.netlify.app/privacy_policy";
 	
 	return (

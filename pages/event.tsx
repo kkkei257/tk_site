@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 	const site_event_title = "tkのプロフィール -EVENT-";
 	const site_event_description = "tkのプロフィール：参加したイベントや旅行先の写真をまとめたページ。";
-	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.png";
 	const site_event_url = "https://tk-profile.netlify.app/event";
 	
 	// 上から順に読み込まれる。
