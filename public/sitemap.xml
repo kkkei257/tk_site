@@ -3,87 +3,71 @@
 
 <!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
-  <loc>https://swtsk.netlify.app/</loc>
+  <loc>https://tk-profile.netlify.app/</loc>
   <priority>1.0</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/about</loc>
+  <loc>https://tk-profile.netlify.app/about</loc>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/illust</loc>
+  <loc>https://tk-profile.netlify.app/work</loc>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/work</loc>
+  <loc>https://tk-profile.netlify.app/event</loc>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/event</loc>
+  <loc>https://tk-profile.netlify.app/privacy_policy</loc>
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/about/about</loc>
+  <loc>https://tk-profile.netlify.app/about/about</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/about/illust</loc>
+  <loc>https://tk-profile.netlify.app/about/work</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/about/work</loc>
+  <loc>https://tk-profile.netlify.app/about/event</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/about/event</loc>
+  <loc>https://tk-profile.netlify.app/work/about</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/illust/about</loc>
+  <loc>https://tk-profile.netlify.app/work/work</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/illust/illust</loc>
+  <loc>https://tk-profile.netlify.app/work/event</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/illust/work</loc>
+  <loc>https://tk-profile.netlify.app/event/about</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/illust/event</loc>
+  <loc>https://tk-profile.netlify.app/event/work</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/work/about</loc>
+  <loc>https://tk-profile.netlify.app/event/event</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/work/illust</loc>
+  <loc>https://tk-profile.netlify.app/privacy_policy/about</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/work/work</loc>
+  <loc>https://tk-profile.netlify.app/privacy_policy/work</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://swtsk.netlify.app/work/event</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://swtsk.netlify.app/event/about</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://swtsk.netlify.app/event/illust</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://swtsk.netlify.app/event/work</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://swtsk.netlify.app/event/event</loc>
+  <loc>https://tk-profile.netlify.app/privacy_policy/event</loc>
   <priority>0.7</priority>
 </url>
 
