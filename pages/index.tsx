@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
-	const site_index_title = "加瀬貴久のプロフィール -TOP-";
-	const site_index_description = "加瀬貴久のプロフィール：TOPページ";
+	const site_index_title = "tkのプロフィール -TOP-";
+	const site_index_description = "tkのプロフィール：TOPページ";
 	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
 	const site_index_url = "https://tk-profile.netlify.app/";
 	
@@ -20,14 +20,14 @@ export default function Home() {
 				<meta name="twitter:image" content={site_image_url} />
 				
 				{/* GAの設定 */}
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-437E8GND3S`}></script>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-GTR2P2G0LD`}></script>
  				<script dangerouslySetInnerHTML={{
  					__html: `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 						
-						gtag('config', 'G-437E8GND3S');
+						gtag('config', 'G-GTR2P2G0LD');
  					`}}
  				/>
 			</Head>

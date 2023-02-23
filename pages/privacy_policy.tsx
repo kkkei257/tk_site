@@ -3,10 +3,10 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
-	const site_privacy_policy_title = "ケイ(@sw_ts_k)のプロフィール -PRIVACY POLICY-";
-	const site_privacy_policy_description = "ケイ(@sw_ts_k)のプロフィール：プライバシーポリシーページ。";
-	const site_image_url = "https://swtsk.netlify.app/twitter/twitter_icon.jpeg";
-	const site_privacy_policy_url = "https://swtsk.netlify.app/privacy_policy";
+	const site_privacy_policy_title = "tkのプロフィール -PRIVACY POLICY-";
+	const site_privacy_policy_description = "tkのプロフィール：プライバシーポリシーページ。";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
+	const site_privacy_policy_url = "https://tk-profile.netlify.app/privacy_policy";
 	
 	return (
 		<>
@@ -19,14 +19,14 @@ export default function Home() {
 				<meta name="twitter:image" content={site_image_url} />
 				
 				{/* GAの設定 */}
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-437E8GND3S`}></script>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-GTR2P2G0LD`}></script>
  				<script dangerouslySetInnerHTML={{
  					__html: `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 						
-						gtag('config', 'G-437E8GND3S');
+						gtag('config', 'G-GTR2P2G0LD');
  					`}}
  				/>
 			</Head>

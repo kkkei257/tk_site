@@ -4,10 +4,10 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
-	const site_about_title = "ケイ(@sw_ts_k)のプロフィール -ABOUT-";
-	const site_about_description = "ケイ(@sw_ts_k)のプロフィール：自己紹介。好きな作品などを書いています。";
-	const site_image_url = "https://swtsk.netlify.app/twitter/twitter_icon.jpeg";
-	const site_about_url = "https://swtsk.netlify.app/about";
+	const site_about_title = "tkのプロフィール -ABOUT-";
+	const site_about_description = "tkのプロフィール：自己紹介。趣味などを書いています。";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
+	const site_about_url = "https://tk-profile.netlify.app/about";
 	
 	return (
 		<>
@@ -20,14 +20,14 @@ export default function Home() {
 				<meta name="twitter:image" content={site_image_url} />
 				
 				{/* GAの設定 */}
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-437E8GND3S`}></script>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-GTR2P2G0LD`}></script>
  				<script dangerouslySetInnerHTML={{
  					__html: `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 						
-						gtag('config', 'G-437E8GND3S');
+						gtag('config', 'G-GTR2P2G0LD');
  					`}}
  				/>
 			</Head>

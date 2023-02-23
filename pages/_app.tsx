@@ -39,10 +39,10 @@ import { DefaultSeo } from 'next-seo';
 App.getInitialProps = async () => ({ pageProps: {} })
 
 export default function App({ Component, pageProps }: AppProps) {
-	const site_title = "ケイ(@sw_ts_k)のプロフィール";
-	const site_name = "ケイ(@sw_ts_k)のプロフィール";
-	const site_description = "ケイ(@sw_ts_k)のプロフィール";
-	const site_image_url = "https://swtsk.netlify.app/twitter/twitter_icon.jpeg";
+	const site_title = "tkのプロフィール";
+	const site_name = "tkのプロフィール";
+	const site_description = "tkのプロフィール";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.png";
 	
 	return (
 		<>
@@ -65,19 +65,19 @@ export default function App({ Component, pageProps }: AppProps) {
 			<DefaultSeo
 				defaultTitle={site_title}
 				description={site_description}
-				canonical="https://swtsk.netlify.app/"
+				canonical="https://tk-profile.netlify.app/"
 				openGraph={{
 					type: "website",
 					title: site_title,
 					description: site_description,
 					site_name: site_name,
-					url: "https://swtsk.netlify.app/",
+					url: "https://tk-profile.netlify.app/",
 					images: [
 					 {
 					 　url: site_image_url,
 					   width: 300,
 					   height: 300,
-					   alt: 'ケイ(@sw_ts_k)のプロフィールサイトのロゴ画像',
+					   alt: 'tkのプロフィールサイトのロゴ画像',
 					   type: 'image/jpeg',
 					 },
 					],

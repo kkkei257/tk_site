@@ -4,10 +4,10 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
-	const site_work_title = "ケイ(@sw_ts_k)のプロフィール -WORK-";
-	const site_work_description = "ケイ(@sw_ts_k)のプロフィール：プログラミングによる制作物を載せたページ。";
-	const site_image_url = "https://swtsk.netlify.app/twitter/twitter_icon.jpeg";
-	const site_work_url = "https://swtsk.netlify.app/work";
+	const site_work_title = "tkのプロフィール -WORK-";
+	const site_work_description = "tkのプロフィール：プログラミングによる制作物を載せたページ。";
+	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.jpng";
+	const site_work_url = "https://tk-profile.netlify.app/work";
 	
 	// 上から順に読み込まれる。
 	const works = [
@@ -44,14 +44,14 @@ export default function Home() {
 				<meta name="twitter:image" content={site_image_url} />
 				
 				{/* GAの設定 */}
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-437E8GND3S`}></script>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-GTR2P2G0LD`}></script>
  				<script dangerouslySetInnerHTML={{
  					__html: `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 						
-						gtag('config', 'G-437E8GND3S');
+						gtag('config', 'G-GTR2P2G0LD');
  					`}}
  				/>
 			</Head>
