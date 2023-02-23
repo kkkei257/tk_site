@@ -1,4 +1,4 @@
-<img src="public/images/screenshot_top.png" width="70%">
+<img src="public/images/screenshot_top.png" width="90%">
 
 Next.jsを用いてプロフィールサイトを作成しました。デザイン含めて一人で設計・作成しています（2023年2月に完成。制作期間：約1ヶ月）。<br>
 https://tk-profile.netlify.app/
