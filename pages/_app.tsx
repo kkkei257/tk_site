@@ -39,47 +39,47 @@ import { DefaultSeo } from 'next-seo';
 App.getInitialProps = async () => ({ pageProps: {} })
 
 export default function App({ Component, pageProps }: AppProps) {
-	const site_title = "tkのプロフィール";
-	const site_name = "tkのプロフィール";
-	const site_description = "tkのプロフィール";
-	const site_image_url = "https://tk-profile.netlify.app/blog/blog_icon.png";
+	const site_title = 'tkのプロフィール';
+	const site_name = 'tkのプロフィール';
+	const site_description = 'tkのプロフィール';
+	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.png';
 	
 	return (
 		<>
 			<Head>
 				<meta
-					name="viewport"
-					content="minimum-scale=1, initial-scale=1, width=device-width"
+					name='viewport'
+					content='minimum-scale=1, initial-scale=1, width=device-width'
 				/>
 				
 				{/* twitter card */}
-				<meta name="twitter:card" content="summary" />
-				<meta name="twitter:site" content="@sw_ts_k" />
-				<meta name="twitter:title" content={site_title} />
-				<meta name="twitter:description" content={site_description} />
-				<meta name="twitter:image" content={site_image_url} />
+				<meta name='twitter:card' content='summary' />
+				<meta name='twitter:site' content='@sw_ts_k' />
+				<meta name='twitter:title' content={site_title} />
+				<meta name='twitter:description' content={site_description} />
+				<meta name='twitter:image' content={site_image_url} />
 				
 				{/* ファビコン */}
-				<link rel="icon" type="image/jpg" href="/blog/blog_icon.png"/>
+				<link rel='icon' type='image/jpg' href='/blog/blog_icon.png'/>
 			</Head>
 			<DefaultSeo
 				defaultTitle={site_title}
 				description={site_description}
-				canonical="https://tk-profile.netlify.app/"
+				canonical='https://tk-profile.netlify.app/'
 				openGraph={{
-					type: "website",
+					type: 'website',
 					title: site_title,
 					description: site_description,
 					site_name: site_name,
-					url: "https://tk-profile.netlify.app/",
+					url: 'https://tk-profile.netlify.app/',
 					images: [
-					 {
-					 　url: site_image_url,
-					   width: 300,
-					   height: 300,
-					   alt: 'tkのプロフィールサイトのロゴ画像',
-					   type: 'image/jpeg',
-					 },
+						{
+							url: site_image_url,
+							width: 300,
+							height: 300,
+							alt: 'tkのプロフィールサイトのロゴ画像',
+							type: 'image/jpeg',
+						},
 					],
 				}}
 			/>
