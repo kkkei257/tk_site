@@ -6,28 +6,28 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 	const site_work_title = 'tkのプロフィール -WORK-';
 	const site_work_description = 'tkのプロフィール：プログラミングによる制作物を載せたページ。';
-	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.png';
+	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.webp';
 	const site_work_url = 'https://tk-profile.netlify.app/work';
 	
 	// 上から順に読み込まれる。
 	const works = [
 		{
-			src: '/work/work4-1.png',
+			src: '/work/work4-1.webp',
 			title: '実験用に作成したSNSプラットフォーム（JavaScript×Firebase）',
 			alt: '実験用に作成したSNSプラットフォーム（JavaScript×Firebase）'
 		},
 		{
-			src: '/work/work3-1.png',
+			src: '/work/work3-1.webp',
 			title: '画像付カレンダーアプリ（Python×Kivy）',
 			alt: '画像付カレンダーアプリ（Python×Kivy）'
 		},
 		{
-			src: '/work/work2-1.png',
+			src: '/work/work2-1.webp',
 			title: 'タイプ相性チェッカーアプリ（Python×Kivy）',
 			alt: 'タイプ相性チェッカーアプリ（Python×Kivy）'
 		},
 		{
-			src: '/work/work1-1.png',
+			src: '/work/work1-1.webp',
 			title: '音楽プレーヤーアプリ（Python×Kivy）',
 			alt: '音楽プレーヤーアプリ（Python×Kivy）'
 		},

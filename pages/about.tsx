@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 	const site_about_title = 'tkのプロフィール -ABOUT-';
 	const site_about_description = '加瀬貴久のプロフィール：自己紹介。趣味などを書いています。';
-	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.png';
+	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.webp';
 	const site_about_url = 'https://tk-profile.netlify.app/about';
 	
 	return (
@@ -50,7 +50,7 @@ export default function Home() {
 					<div className='about_menu_title'>ABOUT</div>
 					<div className='about_profile'>
 						<div className='about_profile_content_illust'>
-							<Image src='/blog/blog_icon.png' alt='blogのアイコン' width={50} height={50} />
+							<Image src='/blog/blog_icon.webp' alt='blogのアイコン' width={50} height={50} />
 						</div>
 						<div className='about_profile_content_text'>
 							はじめまして、加瀬と申します。2021年4月からHR領域のWeb系企業でWeb開発エンジニアをしています。<br/>
@@ -71,50 +71,50 @@ export default function Home() {
 							{/* ライトモード */}
 							<div className='about_sns_content_icon_items light'>
 								<a href='https://www.wantedly.com/id/takahisa_kase' target='_blank' rel='noopener noreferrer'>
-									<Image src='/sns/Wantedly_Mark_LightBG.png' alt='Wantedlyのアイコン' layout='fill' objectFit='cover' />
+									<Image src='/sns/Wantedly_Mark_LightBG.webp' alt='Wantedlyのアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 							{/* ダークモード */}
 							<div className='about_sns_content_icon_items dark'>
 								<a href='https://www.wantedly.com/id/takahisa_kase' target='_blank' rel='noopener noreferrer'>
-									<Image src='/sns/Wantedly_Mark_DarkBG.png' alt='Wantedlyのアイコン' layout='fill' objectFit='cover' />
+									<Image src='/sns/Wantedly_Mark_DarkBG.webp' alt='Wantedlyのアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 							
 							<div className='about_sns_content_icon_items'>
 								<a href='https://www.linkedin.com/in/takahisa-kase-2b1302175/' target='_blank' rel='noopener noreferrer'>
-									<Image src='/sns/LI-In-Bug.png' alt='Linkedinのアイコン' layout='fill' objectFit='cover' />
+									<Image src='/sns/LI-In-Bug.webp' alt='Linkedinのアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 							<div className='about_sns_content_icon_items'>
 								<a href='https://qiita.com/kkkei257' target='_blank' rel='noopener noreferrer'>
-									<Image src='/sns/qiitan_w_trans.png' alt='qiitaのアイコン' layout='fill' objectFit='cover' />
+									<Image src='/sns/qiitan_w_trans.webp' alt='qiitaのアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 							
 							{/* ライトモード */}
 							<div className='about_sns_content_icon_items light'>
 								<a href='https://github.com/kkkei257' target='_blank' rel='noopener noreferrer'>
-									<Image src='/sns/github-mark.png' alt='githubのアイコン' layout='fill' objectFit='cover' />
+									<Image src='/sns/github-mark.webp' alt='githubのアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 							{/* ダークモード */}
 							<div className='about_sns_content_icon_items dark'>
 								<a href='https://github.com/kkkei257' target='_blank' rel='noopener noreferrer'>
-									<Image src='/sns/github-mark-white.png' alt='githubのアイコン' layout='fill' objectFit='cover' />
+									<Image src='/sns/github-mark-white.webp' alt='githubのアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 							
 							<div className='about_sns_content_icon_items'>
 								<a href='https://uec.repo.nii.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9936&item_no=1&page_id=13&block_id=21' target='_blank' rel='noopener noreferrer'>
-									<Image src='/images/paper.png' alt='論文のアイコン' layout='fill' objectFit='cover' />
+									<Image src='/images/paper.webp' alt='論文のアイコン' layout='fill' objectFit='cover' />
 								</a>
 							</div>
 						</div>
 					</div>
 					<div className='about_favorite_contents'>
 						<div className='about_favorite_content_illust'>
-							<Image src='/images/book.png' alt='twitterのアイコン' width={50} height={50} />
+							<Image src='/images/book.webp' alt='twitterのアイコン' width={50} height={50} />
 						</div>
 						<div className='about_favorite_content_text'>
 							その他のプロフィール：

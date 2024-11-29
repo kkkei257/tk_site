@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 export default function Home() {
 	const site_index_title = 'tkのプロフィール -TOP-';
 	const site_index_description = 'tkのプロフィール：TOPページ';
-	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.png';
+	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.webp';
 	const site_index_url = 'https://tk-profile.netlify.app/';
 	
 	return (
@@ -49,16 +49,16 @@ export default function Home() {
 				<div className='index_contents_container'>
 					<div className='index_top_gallery'>
 						<span className='index_top_illust_pc content_loading'>
-							<Image src='/event/event20220807.jpeg' alt='20220807' layout='fill' objectFit='cover' />
+							<Image src='/event/event20220807.webp' alt='20220807' layout='fill' objectFit='cover' />
 						</span>
 						<span className='index_top_illust_sp content_loading'>
-							<Image src='/event/event20220807.jpeg' alt='20220807' layout='fill' objectFit='cover' />
+							<Image src='/event/event20220807.webp' alt='20220807' layout='fill' objectFit='cover' />
 						</span>
 					</div>
 					<div className='index_gallery'>
 						<div className='index_content'>
 							<div className='index_content_illust content_loading'>
-								<Image src='/blog/blog_icon.png' alt='blogのアイコン' layout='fill' objectFit='cover' />
+								<Image src='/blog/blog_icon.webp' alt='blogのアイコン' layout='fill' objectFit='cover' />
 							</div>
 							<div className='index_content_space'></div>
 							<div className='index_content_text'>
@@ -71,7 +71,7 @@ export default function Home() {
 						</div>
 						<div className='index_content'>
 							<div className='index_content_illust content_loading'>
-								<Image src='/work/work2-1.png' alt='ポケモンタイプ相性チェッカー' layout='fill' objectFit='cover' />
+								<Image src='/work/work2-1.webp' alt='ポケモンタイプ相性チェッカー' layout='fill' objectFit='cover' />
 							</div>
 							<div className='index_content_space'></div>
 							<div className='index_content_text'>
@@ -84,7 +84,7 @@ export default function Home() {
 						</div>
 						<div className='index_content'>
 							<div className='index_content_illust content_loading'>
-								<Image src='/event/event20200221.jpeg' alt='2020/02/21 スノボ旅行' layout='fill' objectFit='cover' />
+								<Image src='/event/event20200221.webp' alt='2020/02/21 スノボ旅行' layout='fill' objectFit='cover' />
 							</div>
 							<div className='index_content_space'></div>
 							<div className='index_content_text'>

@@ -1,4 +1,4 @@
-<img src="public/images/screenshot_top.png" width="90%">
+<img src="public/images/screenshot_top.webp" width="90%">
 
 Next.jsを用いてプロフィールサイトを作成しました。デザイン含めて一人で設計・作成しています（制作期間：約1ヶ月）。
 <br>
