@@ -53,7 +53,7 @@ export default function Home() {
 							<Image src='/blog/blog_icon.webp' alt='blogのアイコン' width={50} height={50} />
 						</div>
 						<div className='about_profile_content_text'>
-							はじめまして、加瀬と申します。2021年4月からHR領域のWeb系企業でWeb開発エンジニアをしています。<br/>
+							2021年4月からHR領域のWeb系企業でWeb開発エンジニアをしています。<br/>
 							<br/>
 							大学院ではSNS関連の研究（デマの拡散問題に関するテーマ）をしていました。<br />
 							仕事では主に自社Webサービスのバックエンドの開発に従事しています。<br />
