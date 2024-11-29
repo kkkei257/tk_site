@@ -60,7 +60,7 @@ export default function Home() {
 							本サイトは勉強を兼ねてNext.jsで作成しました。<br />
 							<br/>
 							好きなこと：<span className='about_profile_content_text_br'><br/></span>
-							モノを作ること。映画館で映画を観る。気ままに出歩いたり写真を撮ったり。<br />
+							カフェ巡り / 映画館で映画を観る / 気ままに出歩いたり写真を撮ったり<br />
 						</div>
 					</div>
 					<div className='about_sns'>
@@ -119,14 +119,14 @@ export default function Home() {
 						<div className='about_favorite_content_text'>
 							その他のプロフィール：
 							<ul>
-								<li>好きな飲み物：<span className='about_profile_content_text_br'><br/>
-									</span>カフェラテ、ホットチョコレート
+								<li>好きな飲み物：<span className='about_profile_content_text_br'><br/></span>
+									カフェラテ、ホットチョコレート
 								</li>
-								<li>最近始めた趣味：<span className='about_profile_content_text_br'><br/></span>
-									アナログレコードを聴く、ミラーレス一眼で写真を撮る
+								<li>趣味：<span className='about_profile_content_text_br'><br/></span>
+									ブログ / イラスト / ギター / 旅行 など
 								</li>
-								<li>得意なこと：<span className='about_profile_content_text_br'><br/></span>
-									気になることを念入りに調べる、知識や経験を資料化する
+								<li>経験したことのある技術・言語：<span className='about_profile_content_text_br'><br/></span>
+									PHP / Vue.js / Next.js / Elasticsearch / Terraform / Python など
 								</li>
 							</ul>
 						</div>

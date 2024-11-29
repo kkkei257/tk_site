@@ -16,26 +16,26 @@ export default function Home() {
 			title: '2022/08/05 - 2022/08/07 石川旅行 at 金沢21世紀美術館',
 			alt: '2022/08/05 - 2022/08/07 石川旅行 at 金沢21世紀美術館'
 		},
-		{
-			src: '/event/event20220306.webp',
-			title: '2022/03/06 大阪・淡路島旅行、写真は淡路島にて撮影',
-			alt: '2022/03/06 大阪・淡路島旅行、写真は淡路島にて撮影影'
-		},
+		// {
+		// 	src: '/event/event20220306.webp',
+		// 	title: '2022/03/06 大阪・淡路島旅行、写真は淡路島にて撮影',
+		// 	alt: '2022/03/06 大阪・淡路島旅行、写真は淡路島にて撮影影'
+		// },
 		{
 			src: '/event/event20210919.webp',
 			title: '2021/09/19 山梨・静岡旅行 at 紅葉台展望レストハウス',
 			alt: '2021/09/19 山梨・静岡旅行 at 紅葉台展望レストハウス'
 		},
-		{
-			src: '/event/event20210325.webp',
-			title: '2021/03/25 大学院修了',
-			alt: '2021/03/25 大学院修了'
-		},
-		{
-			src: '/event/event20210301.webp',
-			title: '2021/03/01 スノボ旅行',
-			alt: '2021/03/01 スノボ旅行'
-		},
+		// {
+		// 	src: '/event/event20210325.webp',
+		// 	title: '2021/03/25 大学院修了',
+		// 	alt: '2021/03/25 大学院修了'
+		// },
+		// {
+		// 	src: '/event/event20210301.webp',
+		// 	title: '2021/03/01 スノボ旅行',
+		// 	alt: '2021/03/01 スノボ旅行'
+		// },
 		{
 			src: '/event/event20210209.webp',
 			title: '2021/02/09 初心者会',
@@ -46,11 +46,11 @@ export default function Home() {
 			title: '2020/02/21 スノボ旅行',
 			alt: '2020/02/21 スノボ旅行'
 		},
-		{
-			src: '/event/event20190622.webp',
-			title: '2019/06/22 JGMF Face to Face vol.2 at 渋谷ストリームホール',
-			alt: '2019/06/22 JGMF Face to Face vol.2 at 渋谷ストリームホール'
-		},
+		// {
+		// 	src: '/event/event20190622.webp',
+		// 	title: '2019/06/22 JGMF Face to Face vol.2 at 渋谷ストリームホール',
+		// 	alt: '2019/06/22 JGMF Face to Face vol.2 at 渋谷ストリームホール'
+		// },
 		{
 			src: '/event/event201903330.webp',
 			title: '2019/03/30 サバゲー初参加',
@@ -98,8 +98,8 @@ export default function Home() {
 		},
 		{
 			src: '/event/event20180305.webp',
-			title: '2018/03/05 初USJ',
-			alt: '2018/03/05 初USJ'
+			title: '2018/03/05 ユニバ',
+			alt: '2018/03/05 ユニバ'
 		},
 	]
 	

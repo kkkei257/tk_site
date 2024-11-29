@@ -13,23 +13,23 @@ export default function Home() {
 	const works = [
 		{
 			src: '/work/work4-1.webp',
-			title: '実験用に作成したSNSプラットフォーム（JavaScript×Firebase）',
-			alt: '実験用に作成したSNSプラットフォーム（JavaScript×Firebase）'
+			title: '2020/09：実験用に作成したSNSプラットフォーム（JavaScript×Firebase）',
+			alt: '2020/09：実験用に作成したSNSプラットフォーム（JavaScript×Firebase）'
 		},
 		{
 			src: '/work/work3-1.webp',
-			title: '画像付カレンダーアプリ（Python×Kivy）',
-			alt: '画像付カレンダーアプリ（Python×Kivy）'
+			title: '2019/10：画像付カレンダーアプリ（Python×Kivy）',
+			alt: '2019/10：画像付カレンダーアプリ（Python×Kivy）'
 		},
 		{
 			src: '/work/work2-1.webp',
-			title: 'タイプ相性チェッカーアプリ（Python×Kivy）',
-			alt: 'タイプ相性チェッカーアプリ（Python×Kivy）'
+			title: '2019/09：タイプ相性チェッカーアプリ（Python×Kivy）',
+			alt: '2019/09：タイプ相性チェッカーアプリ（Python×Kivy）'
 		},
 		{
 			src: '/work/work1-1.webp',
-			title: '音楽プレーヤーアプリ（Python×Kivy）',
-			alt: '音楽プレーヤーアプリ（Python×Kivy）'
+			title: '2019/09：音楽プレーヤーアプリ（Python×Kivy）',
+			alt: '2019/09：音楽プレーヤーアプリ（Python×Kivy）'
 		},
 	]
 	
