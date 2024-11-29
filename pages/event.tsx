@@ -62,7 +62,7 @@ export default function Home() {
 			alt: '2019/02/27 人生初スノボ'
 		},
 		{
-			src: '/event/event20190217.jpeg',
+			src: '/event/event20190217.webp',
 			title: '2019/02/17 日間賀島',
 			alt: '2019/02/17 日間賀島で学会発表'
 		},
