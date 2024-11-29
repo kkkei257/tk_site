@@ -20,19 +20,19 @@ const Layout = (props: any) => {
 			<header>
 				<div className="top_menu_icon">
 					<a href="./">
-						<Image src="/blog/blog_icon.png" alt="blogのアイコン" layout="fill" objectFit="cover" />
+						<Image src="/blog/blog_icon.webp" alt="blogのアイコン" layout="fill" objectFit="cover" />
 					</a>
 				</div>
 				<div className="top_menu_text">sw_ts_k</div>
 			</header>
 			{ visible == 'hidden' && 
 				<div className="menuButton">
-					<Image onClick={toggleHamburger} src="/images/menu.png" alt="menuアイコン" layout="fill" objectFit="cover" />
+					<Image onClick={toggleHamburger} src="/images/menu.webp" alt="menuアイコン" layout="fill" objectFit="cover" />
 				</div>
 			}
 			{ visible == 'visible' &&
 				<div className="menuButton">
-					<Image onClick={toggleHamburger} src="/images/close.png" alt="closeアイコン" layout="fill" objectFit="cover" />
+					<Image onClick={toggleHamburger} src="/images/close.webp" alt="closeアイコン" layout="fill" objectFit="cover" />
 				</div>
 			}
 			<div className="container">
@@ -42,14 +42,14 @@ const Layout = (props: any) => {
 				{ props.selected == 'about' && 
 					<div className="menuItemsSelected">
 						<a href="./about">
-							<Image src="/images/about_selected.png" alt="aboutの選択中アイコン" layout="fill" objectFit="cover" />
+							<Image src="/images/about_selected.webp" alt="aboutの選択中アイコン" layout="fill" objectFit="cover" />
 						</a>
 					</div>
 				}
 				{ props.selected != 'about' && 
 					<div className="menuItems">
 						<a href="./about">
-							<Image src="/images/about.png" alt="aboutのアイコン" layout="fill" objectFit="cover" />
+							<Image src="/images/about.webp" alt="aboutのアイコン" layout="fill" objectFit="cover" />
 						</a>
 					</div>
 				}
@@ -57,14 +57,14 @@ const Layout = (props: any) => {
 				{ props.selected == 'work' && 
 					<div className="menuItemsSelected">
 						<a href="./work">
-							<Image src="/images/work_selected.png" alt="workの選択中アイコン" layout="fill" objectFit="cover" />
+							<Image src="/images/work_selected.webp" alt="workの選択中アイコン" layout="fill" objectFit="cover" />
 						</a>
 					</div>
 				}
 				{ props.selected != 'work' && 
 					<div className="menuItems">
 						<a href="./work">
-							<Image src="/images/work.png" alt="workのアイコン" layout="fill" objectFit="cover" />
+							<Image src="/images/work.webp" alt="workのアイコン" layout="fill" objectFit="cover" />
 						</a>
 					</div>
 				}
@@ -72,14 +72,14 @@ const Layout = (props: any) => {
 				{ props.selected == 'event' && 
 					<div className="menuItemsSelected">
 						<a href="./event">
-							<Image src="/images/event_selected.png" alt="eventの選択中アイコン" layout="fill" objectFit="cover" />
+							<Image src="/images/event_selected.webp" alt="eventの選択中アイコン" layout="fill" objectFit="cover" />
 						</a>
 					</div>
 				}
 				{ props.selected != 'event' && 
 					<div className="menuItems">
 						<a href="./event">
-							<Image src="/images/event.png" alt="eventのアイコン" layout="fill" objectFit="cover" />
+							<Image src="/images/event.webp" alt="eventのアイコン" layout="fill" objectFit="cover" />
 						</a>
 					</div>
 				}
@@ -87,7 +87,7 @@ const Layout = (props: any) => {
 			</div>
 			<div className="topScrollButton">
 				<a href="#">
-					<Image src="/images/top.png" alt="topへ戻るアイコン" layout="fill" objectFit="cover" />
+					<Image src="/images/top.webp" alt="topへ戻るアイコン" layout="fill" objectFit="cover" />
 				</a>
 			</div>
 			<div onClick={toggleHamburger} className={`${visible} ${isFirst} hamburgerMenu`}>

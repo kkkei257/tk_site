@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	const site_title = 'tkのプロフィール';
 	const site_name = 'tkのプロフィール';
 	const site_description = 'tkのプロフィール';
-	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.png';
+	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.webp';
 	
 	return (
 		<>
@@ -60,7 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta name='twitter:image' content={site_image_url} />
 				
 				{/* ファビコン */}
-				<link rel='icon' type='image/jpg' href='/blog/blog_icon.png'/>
+				<link rel='icon' type='image/jpg' href='/blog/blog_icon.webp'/>
 			</Head>
 			<DefaultSeo
 				defaultTitle={site_title}
