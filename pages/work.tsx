@@ -8,8 +8,7 @@ export default function Home() {
 	const site_work_description = 'tkのプロフィール：プログラミングによる制作物を載せたページ。';
 	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.webp';
 	const site_work_url = 'https://tk-profile.netlify.app/work';
-	
-	// 上から順に読み込まれる。
+
 	const works = [
 		{
 			src: '/work/work4-1.webp',
@@ -32,28 +31,26 @@ export default function Home() {
 			alt: '2019/09：音楽プレーヤーアプリ（Python×Kivy）'
 		},
 	]
-	
+
 	return (
 		<>
 			<Head>
-				{/* twitter card */}
 				<meta name='twitter:card' content='summary' />
 				<meta name='twitter:site' content='@sw_ts_k' />
 				<meta name='twitter:title' content={site_work_title} />
 				<meta name='twitter:description' content={site_work_description} />
 				<meta name='twitter:image' content={site_image_url} />
-				
-				{/* GAの設定 */}
+
 				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-GTR2P2G0LD`}></script>
- 				<script dangerouslySetInnerHTML={{
- 					__html: `
+				<script dangerouslySetInnerHTML={{
+					__html: `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 						
 						gtag('config', 'G-GTR2P2G0LD');
- 					`}}
- 				/>
+					`}}
+				/>
 			</Head>
 			<NextSeo
 				title={site_work_title}
@@ -71,18 +68,26 @@ export default function Home() {
 			/>
 			<Layout selected={'work'}>
 				<div className='work_contents_container'>
-					<div className='work_menu_title'>WORK</div>
-					<div className='work_gallery'>
+					<header className='page_header'>
+						<h1 className='page_title'>WORK</h1>
+						<p className='page_subtitle'>制作物</p>
+					</header>
+					<div className='gallery_grid'>
 						{works.map((work) => (
-							<div className='work_content content_loading' key={work.src}>
+							<article className='gallery_item' key={work.src}>
 								<a href={work.src} data-lightbox='work_group' data-title={work.title} data-alt={work.alt}>
-									<Image src={work.src} alt={work.alt} layout='fill' objectFit='cover' />
+									<div className='gallery_image'>
+										<Image src={work.src} alt={work.alt} fill style={{ objectFit: 'cover' }} />
+									</div>
+									<div className='gallery_overlay'>
+										<p className='gallery_title'>{work.title}</p>
+									</div>
 								</a>
-							</div>
+							</article>
 						))}
 					</div>
 				</div>
 			</Layout>
-			</>
+		</>
 	)
 }

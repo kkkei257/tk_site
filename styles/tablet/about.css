@@ -1,131 +1,162 @@
-/* tablet 481px〜959px */
 @media screen and (min-width: 481px) and (max-width: 959px) {
 
 	.about_contents_container {
 		display: flex;
-		flex-flow: column;
-		padding: 5vh 2rem 0 2rem;
-		font-family: "Noto Sans JP";
+		flex-direction: column;
+		gap: 2.5rem;
+		padding: 1.5rem 0;
 	}
-	
-	.about_menu_title {
-		font-family: 'Alegreya Sans SC', sans-serif;
-		width: 100%;
-		height: 5vh;
+
+	.page_header {
 		text-align: center;
-		font-size: 17pt;
-		margin-bottom: 3vh;
+		margin-bottom: 0.75rem;
 	}
-	
-	.about_profile {
+
+	.page_title {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		letter-spacing: 0.1em;
+		margin-bottom: 0.375rem;
+	}
+
+	.page_subtitle {
+		font-size: 0.9rem;
+		color: var(--text-secondary);
+	}
+
+	.about_profile_section {
+		margin-bottom: 0.75rem;
+	}
+
+	.about_profile_card {
+		background: var(--background-card);
+		border-radius: var(--radius-lg);
+		padding: 2rem;
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.75rem;
+	}
+
+	.about_profile_avatar img {
+		border-radius: 50%;
+		box-shadow: var(--shadow-md);
+	}
+
+	.about_profile_info {
 		width: 100%;
+	}
+
+	.about_profile_text {
+		color: var(--text-secondary);
+		line-height: 1.8;
+		margin-bottom: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.about_profile_text:last-child {
+		margin-bottom: 0;
+	}
+
+	.about_profile_text strong {
+		color: var(--text-primary);
+		font-weight: 600;
+	}
+
+	.section_title {
+		font-size: 1.375rem;
+		font-weight: 600;
+		color: var(--text-primary);
+		margin-bottom: 1.25rem;
+		padding-bottom: 0.625rem;
+		border-bottom: 2px solid var(--primary-color);
+		display: inline-block;
+	}
+
+	.about_social_section {
+		margin-bottom: 0.75rem;
+	}
+
+	.social_links {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+
+	.social_link_item {
 		display: flex;
-	 	flex-flow: column;
-	 	justify-content: space-between;
-		margin-bottom: 5vh;
+		align-items: center;
+		gap: 0.625rem;
+		padding: 0.875rem 1.25rem;
+		background: var(--background-card);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--border-color);
+		box-shadow: var(--shadow-sm);
 	}
-	
-	.about_profile_content_illust {
-		width: 100%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		text-align: center;
-		margin-bottom: 15px;
-	}
-	
-	.about_profile_content_illust img {
-		border-radius: 50%; /* header内の画像を円形表示する。 */
-	}
-	
-	.about_profile_content_text {
-		width: 100%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		text-align: justify;
-	}
-	
-	.about_profile_content_text_br {
-		
-	}
-	
-	.about_sns {
-		width: 100%;
-		display: flex;
-	 	flex-flow: column;
-	 	justify-content: space-between;
-		margin-bottom: 12vh;
-	}
-	
-	.about_sns_content_illust {
-		width: 100%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		text-align: center;
-		margin-bottom: 15px;
-	}
-	
-	.about_sns_content_illust img {
-		border-radius: 50%; /* header内の画像を円形表示する。 */
-	}
-	
-	.about_sns_content_icon {
-		width: 100%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		display: flex;
-	 	justify-content: space-between;
-	 	flex-wrap: wrap;
-	 	padding-left: 10vw; /* pcではmenuBarの左右に余白を設ける */
-	 	padding-right: 10vw; /* pcではmenuBarの左右に余白を設ける */
-	}
-	
-	.about_sns_content_icon_items {
-		height: 32px;
-		width: 32px;
+
+	.social_icon {
 		position: relative;
+		width: 26px;
+		height: 26px;
 	}
-	
-	.about_favorite_contents {
-		width: 100%;
-		display: flex;
-	 	flex-flow: column;
-	 	justify-content: space-between;
-		margin-bottom: 10vh;
+
+	.social_label {
+		font-size: 0.85rem;
+		font-weight: 500;
 	}
-	
-	.about_favorite_content_illust {
-		width: 100%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		text-align: center;
-		margin-bottom: 15px;
+
+	.about_skills_section {
+		margin-bottom: 1.5rem;
 	}
-	
-	.about_favorite_content_illust img {
-		border-radius: 50%; /* header内の画像を円形表示する。 */
+
+	.skills_list {
+		background: var(--background-card);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--border-color);
+		box-shadow: var(--shadow-md);
+		overflow: hidden;
 	}
-	
-	.about_favorite_content_text {
-		width: 100%; /* 画像と空白とテキスト部分の間隔調整用。 */
+
+	.skill_item {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid var(--border-color);
 	}
-	
-	.about_favorite_content_text ul {
-		border-top: solid #1e366a 1px; /* 上のボーダー */
-		border-bottom: solid #1e366a 1px; /* 下のボーダー */
-		padding: 1em 0 1em 1.5em;
-		width: 100%;
+
+	.skill_item:last-child {
+		border-bottom: none;
 	}
-	
-	.about_favorite_content_text li {
-		line-height: 1.5; /* 文の行高 */
- 		padding: 0.2em 0; /* 前後の文との余白 */
+
+	.skill_category {
+		font-size: 0.8rem;
+		font-weight: 600;
+		color: var(--primary-color);
+		margin-bottom: 0.375rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
-	
-	/* ライトモード時に表示させたい要素 */
+
+	.skill_items {
+		color: var(--text-secondary);
+		line-height: 1.6;
+		font-size: 0.9rem;
+	}
+
 	.light {
 		display: block;
 	}
-	
-	/* ダークモード時に表示させたい要素 */
+
 	.dark {
 		display: none;
 	}
-	
+
 	@media (prefers-color-scheme: dark) {
 		.light {
 			display: none;
 		}
-		
+
 		.dark {
 			display: block;
 		}
