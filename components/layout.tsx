@@ -1,111 +1,101 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React, {useState} from 'react'
 
 const Layout = (props: any) => {
-	// visibleの値を変えることでメニューを表示・非表示させる
 	const [visible, setVisible] = useState('hidden')
-	
-	// 最初にページを読み込んだ際に一瞬ハンバーガーメニューが表示されてしまうのを防ぐためのフラグ。
 	const [isFirst, setFirstLoadState] = useState('first');
-	
-	// 右上のメニューをクリックで実行される
+
 	const toggleHamburger = () => {
-		// クリックしたらフラグの内容を空文字にする（= .firstのcssが適用されなくなる）。
 		setFirstLoadState(isFirst !== '' ? '' : '');
 		setVisible(visible === 'visible' ? 'hidden' : 'visible');
 	}
-	
+
+	const navItems = [
+		{ href: './about', label: 'ABOUT', key: 'about' },
+		{ href: './work', label: 'WORK', key: 'work' },
+		{ href: './event', label: 'EVENT', key: 'event' },
+	];
+
 	return (
 		<>
 			<header>
-				<div className="top_menu_icon">
-					<a href="./">
-						<Image src="/blog/blog_icon.webp" alt="blogのアイコン" layout="fill" objectFit="cover" />
-					</a>
+				<div className="header_inner">
+					<Link href="./" className="logo_link">
+						<div className="top_menu_icon">
+							<Image src="/blog/blog_icon.webp" alt="blogのアイコン" fill style={{ objectFit: 'cover' }} />
+						</div>
+						<span className="top_menu_text">tk-profile</span>
+					</Link>
+					<nav className="desktop_nav">
+						{navItems.map((item) => (
+							<Link
+								key={item.key}
+								href={item.href}
+								className={`nav_link ${props.selected === item.key ? 'nav_link_active' : ''}`}
+							>
+								{item.label}
+							</Link>
+						))}
+					</nav>
 				</div>
-				<div className="top_menu_text">sw_ts_k</div>
 			</header>
-			{ visible == 'hidden' && 
-				<div className="menuButton">
-					<Image onClick={toggleHamburger} src="/images/menu.webp" alt="menuアイコン" layout="fill" objectFit="cover" />
-				</div>
-			}
-			{ visible == 'visible' &&
-				<div className="menuButton">
-					<Image onClick={toggleHamburger} src="/images/close.webp" alt="closeアイコン" layout="fill" objectFit="cover" />
-				</div>
-			}
+
+			<button
+				className="menuButton"
+				onClick={toggleHamburger}
+				aria-label={visible === 'hidden' ? 'メニューを開く' : 'メニューを閉じる'}
+			>
+				<span className={`hamburger_icon ${visible === 'visible' ? 'open' : ''}`}>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+
 			<div className="container">
 				{props.children}
 			</div>
-			<div className="menuBar">
-				{ props.selected == 'about' && 
-					<div className="menuItemsSelected">
-						<a href="./about">
-							<Image src="/images/about_selected.webp" alt="aboutの選択中アイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				{ props.selected != 'about' && 
-					<div className="menuItems">
-						<a href="./about">
-							<Image src="/images/about.webp" alt="aboutのアイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				
-				{ props.selected == 'work' && 
-					<div className="menuItemsSelected">
-						<a href="./work">
-							<Image src="/images/work_selected.webp" alt="workの選択中アイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				{ props.selected != 'work' && 
-					<div className="menuItems">
-						<a href="./work">
-							<Image src="/images/work.webp" alt="workのアイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				
-				{ props.selected == 'event' && 
-					<div className="menuItemsSelected">
-						<a href="./event">
-							<Image src="/images/event_selected.webp" alt="eventの選択中アイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				{ props.selected != 'event' && 
-					<div className="menuItems">
-						<a href="./event">
-							<Image src="/images/event.webp" alt="eventのアイコン" layout="fill" objectFit="cover" />
-						</a>
-					</div>
-				}
-				
-			</div>
-			<div className="topScrollButton">
-				<a href="#">
-					<Image src="/images/top.webp" alt="topへ戻るアイコン" layout="fill" objectFit="cover" />
-				</a>
-			</div>
+
+			<nav className="menuBar">
+				{navItems.map((item) => (
+					<Link
+						key={item.key}
+						href={item.href}
+						className={props.selected === item.key ? 'menuItemsSelected' : 'menuItems'}
+					>
+						<Image
+							src={`/images/${item.key}${props.selected === item.key ? '_selected' : ''}.webp`}
+							alt={`${item.label}のアイコン`}
+							fill
+							style={{ objectFit: 'cover' }}
+						/>
+					</Link>
+				))}
+			</nav>
+
+			<button className="topScrollButton" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="トップへ戻る">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+					<path d="M18 15l-6-6-6 6"/>
+				</svg>
+			</button>
+
 			<div onClick={toggleHamburger} className={`${visible} ${isFirst} hamburgerMenu`}>
-				<div className="hamburgerMenuItems">
-					<a href="./">TOP</a>
-				</div>
-				<div className="hamburgerMenuItems">
-					<a href="./about">ABOUT</a>
-				</div>
-				<div className="hamburgerMenuItems">
-					<a href="./work">WORK</a>
-				</div>
-				<div className="hamburgerMenuItems">
-					<a href="./event">EVENT</a>
-				</div>
+				<nav className="hamburgerMenu_inner">
+					<Link href="./" className="hamburgerMenuItems">TOP</Link>
+					{navItems.map((item) => (
+						<Link key={item.key} href={item.href} className="hamburgerMenuItems">
+							{item.label}
+						</Link>
+					))}
+				</nav>
 			</div>
+
 			<footer>
-				<a href="./">tk-profile</a>
+				<div className="footer_inner">
+					<Link href="./" className="footer_logo">tk-profile</Link>
+					<p className="footer_copy">&copy; 2024 tk-profile. All rights reserved.</p>
+				</div>
 			</footer>
 		</>
 	)

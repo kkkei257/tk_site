@@ -1,45 +1,79 @@
 @media screen and (min-width: 960px) {
-	
+
 	.work_contents_container {
 		display: flex;
-		flex-flow: column;
-		padding-top: 5vh;
+		flex-direction: column;
+		gap: 2rem;
+		padding: 2rem 0;
 	}
-	
-	.work_menu_title {
-		font-family: 'Alegreya Sans SC', sans-serif;
-		width: 100%;
-		height: 5vh;
+
+	.section_heading {
 		text-align: center;
-		font-size: 18pt;
-		margin-bottom: 5vh;
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		letter-spacing: 0.15em;
+		margin-bottom: 0;
 	}
-	
-	.work_gallery {
-		display: flex;
-	 	flex-wrap: wrap;
-	 	/*justify-content: space-between;*/ /* 3列並びの場合この設定があると3n+2個の場合に変な空白が生じる。 */
-	 	margin-bottom: 10px;
+
+	.gallery_grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 1.5rem;
 	}
-	
-	.work_content {
+
+	.gallery_item {
 		position: relative;
-		height: 33vh;
-		width: 33%;
-		margin-bottom: 10px;
+		border-radius: var(--radius-xl);
 		overflow: hidden;
-		
-		margin-left: 0.15%; /* justify-content: space-between; を削除する代わりの記述。 */
-		margin-right: 0.15%; /* justify-content: space-between; を削除する代わりの記述。 */
+		background: var(--background-card);
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
+		aspect-ratio: 4 / 3;
+		cursor: pointer;
 	}
-	
-	.work_content img {
-		transition-duration: 0.5s;
+
+	.gallery_item a {
+		display: block;
+		height: 100%;
 	}
-	
-	.work_content:hover img {
-		transform: scale(1.1);
-		transition-duration: 0.5s; /* ホバー時に画像を少し拡大するエフェクト */
+
+	.gallery_image {
+		position: absolute;
+		inset: 0;
+		transition: transform var(--transition-slow);
 	}
-	
+
+	.gallery_item:hover .gallery_image {
+		transform: scale(1.08);
+	}
+
+	.gallery_overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8) 0%,
+			rgba(0, 0, 0, 0.3) 40%,
+			rgba(0, 0, 0, 0) 100%
+		);
+		display: flex;
+		align-items: flex-end;
+		padding: 1.5rem;
+		opacity: 0;
+		transition: opacity var(--transition-normal);
+	}
+
+	.gallery_item:hover .gallery_overlay {
+		opacity: 1;
+	}
+
+	.gallery_title {
+		color: white;
+		font-size: 0.9rem;
+		font-weight: 500;
+		line-height: 1.5;
+		text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+	}
+
 }

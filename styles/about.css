@@ -1,128 +1,185 @@
 @media screen and (min-width: 960px) {
-	
+
 	.about_contents_container {
 		display: flex;
-		flex-flow: column;
-		padding-top: 5vh;
+		flex-direction: column;
+		gap: 3rem;
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2rem 0;
 	}
-	
-	.about_menu_title {
-		font-family: 'Alegreya Sans SC', sans-serif;
-		width: 100%;
-		height: 5vh;
+
+	.page_header {
 		text-align: center;
-		font-size: 18pt;
-		margin-bottom: 5vh;
+		margin-bottom: 1rem;
 	}
-	
-	.about_profile {
-		width: 100%;
+
+	.page_title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		letter-spacing: 0.1em;
+		margin-bottom: 0.5rem;
+	}
+
+	.page_subtitle {
+		font-size: 1rem;
+		color: var(--text-secondary);
+	}
+
+	.about_profile_section {
+		margin-bottom: 1rem;
+	}
+
+	.section_heading {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		letter-spacing: 0.15em;
+		margin-bottom: 2rem;
+	}
+
+	.about_profile_card {
+		background: var(--background-card);
+		border-radius: var(--radius-xl);
+		padding: 2.5rem;
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
 		display: flex;
-	 	justify-content: space-between;
-	 	flex-wrap: wrap;
-		margin-bottom: 6vh;
+		gap: 2.5rem;
+		align-items: flex-start;
 	}
-	
-	.about_profile_content_illust {
-		width: 0%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		margin: auto;
+
+	.about_profile_avatar {
+		flex-shrink: 0;
 	}
-	
-	.about_profile_content_illust img {
-		border-radius: 50%; /* header内の画像を円形表示する。 */
+
+	.about_profile_avatar img {
+		border-radius: 50%;
+		box-shadow: var(--shadow-lg);
 	}
-	
-	.about_profile_content_text {
-		width: 80%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		text-align: justify;		
+
+	.about_profile_info {
+		flex: 1;
 	}
-	
-	.about_profile_content_text_br {
-		display: none; /* pcでは「好きなこと」の後に改行を入れない。 */
+
+	.about_profile_text {
+		color: var(--text-secondary);
+		line-height: 1.8;
+		margin-bottom: 1rem;
 	}
-	
-	.about_sns {
-		width: 100%;
+
+	.about_profile_text:last-child {
+		margin-bottom: 0;
+	}
+
+	.about_profile_text strong {
+		color: var(--text-primary);
+		font-weight: 600;
+	}
+
+	.section_title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: var(--text-primary);
+		margin-bottom: 1.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 2px solid var(--primary-color);
+		display: inline-block;
+	}
+
+	.about_social_section {
+		margin-bottom: 1rem;
+	}
+
+	.social_links {
 		display: flex;
-	 	justify-content: space-between;
-	 	flex-wrap: wrap;
-		margin-bottom: 10vh;
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
-	
-	.about_sns_content_illust {
-		width: 0%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		margin: auto;
-	}
-	
-	.about_sns_content_illust img {
-		border-radius: 50%; /* header内の画像を円形表示する。 */
-	}
-	
-	.about_sns_content_icon {
-		width: 80%; /* 画像と空白とテキスト部分の間隔調整用。 */		
+
+	.social_link_item {
 		display: flex;
-	 	justify-content: space-between;
-	 	flex-wrap: wrap;
-	 	padding-right: 20vw;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.875rem 1.5rem;
+		background: var(--background-card);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--border-color);
+		box-shadow: var(--shadow-sm);
+		transition: all var(--transition-fast);
 	}
-	
-	.about_sns_content_icon_items {
-		height: 32px;
-		width: 32px;
+
+	.social_link_item:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-md);
+		border-color: var(--primary-color);
+		color: var(--primary-color);
+	}
+
+	.social_icon {
 		position: relative;
+		width: 28px;
+		height: 28px;
 	}
-	
-	.about_favorite_contents {
-		width: 100%;
-		display: flex;
-	 	justify-content: space-between;
-	 	flex-wrap: wrap;
-		margin-bottom: 10vh;
+
+	.social_label {
+		font-size: 0.9rem;
+		font-weight: 500;
 	}
-	
-	.about_favorite_content_illust {
-		width: 0%; /* 画像と空白とテキスト部分の間隔調整用。 */
-		margin: auto;
+
+	.about_skills_section {
+		margin-bottom: 2rem;
 	}
-	
-	.about_favorite_content_illust img {
-		border-radius: 50%; /* header内の画像を円形表示する。 */
+
+	.skills_list {
+		background: var(--background-card);
+		border-radius: var(--radius-xl);
+		border: 1px solid var(--border-color);
+		box-shadow: var(--shadow-md);
+		overflow: hidden;
 	}
-	
-	.about_favorite_content_text {
-		width: 80%; /* 画像と空白とテキスト部分の間隔調整用。 */
+
+	.skill_item {
+		padding: 1.5rem 2rem;
+		border-bottom: 1px solid var(--border-color);
 	}
-	
-	.about_favorite_content_text ul {
-		border-top: solid #1e366a 1px; /* 上のボーダー */
-		border-bottom: solid #1e366a 1px; /* 下のボーダー */
-		padding: 1em 0 1em 1.5em;
-		width: 70%;
+
+	.skill_item:last-child {
+		border-bottom: none;
 	}
-	
-	.about_favorite_content_text li {
-		line-height: 1.5; /* 文の行高 */
- 		padding: 0.2em 0; /* 前後の文との余白 */
+
+	.skill_category {
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
-	
-	/* ライトモード時に表示させたい要素 */
+
+	.skill_items {
+		color: var(--text-secondary);
+		line-height: 1.6;
+	}
+
 	.light {
 		display: block;
 	}
-	
-	/* ダークモード時に表示させたい要素 */
+
 	.dark {
 		display: none;
 	}
-	
+
 	@media (prefers-color-scheme: dark) {
 		.light {
 			display: none;
 		}
-		
+
 		.dark {
 			display: block;
 		}
 	}
-	
+
 }
