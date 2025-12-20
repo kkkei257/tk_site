@@ -11,7 +11,7 @@ export default function Home() {
 
 	const socialLinks = [
 		{ href: 'https://www.wantedly.com/id/takahisa_kase', icon: '/sns/Wantedly_Mark_LightBG.webp', iconDark: '/sns/Wantedly_Mark_DarkBG.webp', alt: 'Wantedly', hasDarkMode: true },
-		{ href: 'https://www.linkedin.com/in/takahisa-kase-2b1302175/', icon: '/sns/LI-In-Bug.webp', alt: 'LinkedIn' },
+		{ href: 'https://www.linkedin.com/in/%E8%B2%B4%E4%B9%85-%E5%8A%A0%E7%80%AC-2b1302175/', icon: '/sns/LI-In-Bug.webp', alt: 'LinkedIn' },
 		{ href: 'https://qiita.com/kkkei257', icon: '/sns/qiitan_w_trans.webp', alt: 'Qiita' },
 		{ href: 'https://github.com/kkkei257', icon: '/sns/github-mark.webp', iconDark: '/sns/github-mark-white.webp', alt: 'GitHub', hasDarkMode: true },
 		{ href: 'https://uec.repo.nii.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=9936&item_no=1&page_id=13&block_id=21', icon: '/images/paper.webp', alt: '論文' },
