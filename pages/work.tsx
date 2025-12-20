@@ -68,10 +68,7 @@ export default function Home() {
 			/>
 			<Layout selected={'work'}>
 				<div className='work_contents_container'>
-					<header className='page_header'>
-						<h1 className='page_title'>WORK</h1>
-						<p className='page_subtitle'>制作物</p>
-					</header>
+					<h1 className='section_heading'>WORK</h1>
 					<div className='gallery_grid'>
 						{works.map((work) => (
 							<article className='gallery_item' key={work.src}>

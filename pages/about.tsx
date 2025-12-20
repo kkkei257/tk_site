@@ -59,12 +59,14 @@ export default function Home() {
 			/>
 			<Layout selected={'about'}>
 				<div className='about_contents_container'>
-					<header className='page_header'>
-						<h1 className='page_title'>ABOUT</h1>
-						<p className='page_subtitle'>自己紹介</p>
-					</header>
+					{/*<header className='page_header'>*/}
+					{/*	<h1 className='page_title'>ABOUT</h1>*/}
+					{/*	<p className='page_subtitle'>自己紹介</p>*/}
+					{/*</header>*/}
 
 					<section className='about_profile_section'>
+						<h1 className='section_heading'>ABOUT</h1>
+						<br/>
 						<div className='about_profile_card'>
 							<div className='about_profile_avatar'>
 								<Image src='/blog/blog_icon.webp' alt='プロフィール画像' width={120} height={120} />

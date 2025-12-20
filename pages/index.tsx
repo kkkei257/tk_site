@@ -85,7 +85,7 @@ export default function Home() {
 							<div className='hero_overlay'></div>
 						</div>
 						<div className='hero_content'>
-							<h1 className='hero_title'>Welcome to my Portfolio</h1>
+							{/*<h1 className='hero_title'>Welcome to my Portfolio</h1>*/}
 							<p className='hero_subtitle'>Web Developer & Engineer</p>
 						</div>
 					</section>

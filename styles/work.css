@@ -7,6 +7,15 @@
 		padding: 2rem 0;
 	}
 
+	.section_heading {
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		letter-spacing: 0.15em;
+		margin-bottom: 0;
+	}
+
 	.gallery_grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

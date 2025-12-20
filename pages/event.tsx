@@ -118,10 +118,7 @@ export default function Home() {
 			/>
 			<Layout selected={'event'}>
 				<div className='event_contents_container'>
-					<header className='page_header'>
-						<h1 className='page_title'>EVENT</h1>
-						<p className='page_subtitle'>イベント・旅行の思い出</p>
-					</header>
+					<h1 className='section_heading'>EVENT</h1>
 					<div className='gallery_grid'>
 						{events.map((event) => (
 							<article className='gallery_item' key={event.src}>
