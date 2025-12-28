@@ -6,7 +6,7 @@
 		left: 0;
 		right: 0;
 		z-index: 100;
-		background: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.7);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
 		border-bottom: 1px solid var(--border-color);
@@ -55,7 +55,7 @@
 		left: 0;
 		right: 0;
 		height: 65px;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(255, 255, 255, 0.7);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
 		z-index: 99;
@@ -69,9 +69,15 @@
 
 	.menuItems,
 	.menuItemsSelected {
-		position: relative;
-		width: 26px;
-		height: 26px;
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		color: var(--text-secondary);
+		transition: color var(--transition-fast);
+	}
+
+	.menuItemsSelected {
+		color: var(--primary-color);
 	}
 
 	.topScrollButton {
@@ -81,7 +87,7 @@
 		width: 44px;
 		height: 44px;
 		border-radius: 50%;
-		background: rgba(255, 255, 255, 0.9);
+		background: rgba(255, 255, 255, 0.7);
 		backdrop-filter: blur(8px);
 		-webkit-backdrop-filter: blur(8px);
 		border: 1px solid var(--border-color);
@@ -190,7 +196,7 @@
 	.hamburgerMenu {
 		position: fixed;
 		inset: 0;
-		background: rgba(255, 255, 255, 0.98);
+		background: rgba(255, 255, 255, 0.7);
 		backdrop-filter: blur(20px);
 		-webkit-backdrop-filter: blur(20px);
 		z-index: 100;
@@ -217,15 +223,15 @@
 
 	@media (prefers-color-scheme: dark) {
 		header {
-			background: rgba(15, 23, 42, 0.95);
+			background: rgba(15, 23, 42, 0.7);
 		}
 
 		.menuBar {
-			background: rgba(15, 23, 42, 0.95);
+			background: rgba(15, 23, 42, 0.7);
 		}
 
 		.hamburgerMenu {
-			background: rgba(15, 23, 42, 0.98);
+			background: rgba(15, 23, 42, 0.7);
 		}
 
 		.menuButton {
@@ -234,7 +240,7 @@
 		}
 
 		.topScrollButton {
-			background: rgba(30, 41, 59, 0.9);
+			background: rgba(30, 41, 59, 0.7);
 			border-color: var(--border-color);
 		}
 	}
