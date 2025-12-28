@@ -64,12 +64,7 @@ const Layout = (props: any) => {
 						href={item.href}
 						className={props.selected === item.key ? 'menuItemsSelected' : 'menuItems'}
 					>
-						<Image
-							src={`/images/${item.key}${props.selected === item.key ? '_selected' : ''}.webp`}
-							alt={`${item.label}のアイコン`}
-							fill
-							style={{ objectFit: 'cover' }}
-						/>
+						{item.label}
 					</Link>
 				))}
 			</nav>
