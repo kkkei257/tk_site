@@ -22,18 +22,18 @@ export default function Home() {
 		{
 			href: './work',
 			title: 'WORK',
-			description: 'プログラミングによる制作物を載せたページ。',
-			linkText: '制作物一覧',
-			image: '/work/work2-1.webp',
-			alt: 'ポケモンタイプ相性チェッカー'
+			description: '開発実績およびブログ記事を載せたページ。',
+			linkText: '開発実績',
+			image: '/work/kuchikomi_search_1.webp',
+			alt: 'クチコミキーワード検索'
 		},
 		{
 			href: './event',
 			title: 'EVENT',
 			description: '参加したイベントや旅行先の写真をまとめたページ。',
 			linkText: 'イベント一覧',
-			image: '/event/event20200221.webp',
-			alt: '2020/02/21 スノボ旅行'
+			image: '/event/sanfrancisco.JPG',
+			alt: '2024/08/09 - 2022/08/19 アメリカ旅行（ラスベガス、サンフランシスコ）'
 		}
 	];
 
