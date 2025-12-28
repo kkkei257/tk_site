@@ -12,6 +12,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'qiita-user-contents.imgix.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.qiita.com',
+      },
     ],
   },
 }
