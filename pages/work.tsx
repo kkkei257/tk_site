@@ -44,7 +44,7 @@ export default function Home() {
 			alt: '2025/04：生成AI回答画面の実装 (Taskhub)'
 		},
 		{
-			src: '/work/kuchikomi_search_1.webp',
+			src: '/work/comparison_1.webp',
 			title: '2025/02：社員評価・年収比較コンテンツ (OpenWork)',
 			alt: '2025/02：社員評価・年収比較コンテンツ (OpenWork)'
 		},
