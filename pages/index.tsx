@@ -1,126 +1,129 @@
-import Layout from '../components/layout'
 import Image from 'next/image'
-import Head from 'next/head'
 import Link from 'next/link'
-import { NextSeo } from 'next-seo';
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import WorkCard from '../components/work_card'
+import { works } from '../data/works'
+import common from '../styles/common.module.css'
+import styles from '../styles/index.module.css'
+
+import heroImage from '../public/event/event20220807.webp'
+import aboutImage from '../public/blog/blog_icon.webp'
+import workImage from '../public/work/kuchikomi_search_1.webp'
+import eventImage from '../public/event/sanfrancisco.webp'
+
+const features = [
+	{
+		href: '/about',
+		title: 'ABOUT',
+		description: '自己紹介。趣味などを書いています。',
+		image: aboutImage,
+		alt: 'blogのアイコン',
+	},
+	{
+		href: '/work',
+		title: 'WORK',
+		description: '開発実績およびブログ記事を載せたページ。',
+		image: workImage,
+		alt: 'クチコミキーワード検索',
+	},
+	{
+		href: '/event',
+		title: 'EVENT',
+		description: '参加したイベントや旅行先の写真をまとめたページ。',
+		image: eventImage,
+		alt: '2024/08/09 - 2024/08/19 アメリカ旅行（サンフランシスコ）',
+	},
+]
+
+const ArrowIcon = () => (
+	<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+		<path d='M5 12h14M12 5l7 7-7 7' />
+	</svg>
+)
 
 export default function Home() {
-	const site_index_title = 'tkのプロフィール -TOP-';
-	const site_index_description = 'tkのプロフィール：TOPページ';
-	const site_image_url = 'https://tk-profile.netlify.app/blog/blog_icon.webp';
-	const site_index_url = 'https://tk-profile.netlify.app/';
-
-	const features = [
-		{
-			href: './about',
-			title: 'ABOUT',
-			description: '自己紹介。趣味などを書いています。',
-			linkText: 'プロフィールを表示',
-			image: '/blog/blog_icon.webp',
-			alt: 'blogのアイコン'
-		},
-		{
-			href: './work',
-			title: 'WORK',
-			description: '開発実績およびブログ記事を載せたページ。',
-			linkText: '開発実績',
-			image: '/work/kuchikomi_search_1.webp',
-			alt: 'クチコミキーワード検索'
-		},
-		{
-			href: './event',
-			title: 'EVENT',
-			description: '参加したイベントや旅行先の写真をまとめたページ。',
-			linkText: 'イベント一覧',
-			image: '/event/sanfrancisco.JPG',
-			alt: '2024/08/09 - 2022/08/19 アメリカ旅行（ラスベガス、サンフランシスコ）'
-		}
-	];
-
 	return (
 		<>
-			<Head>
-				<meta name='twitter:card' content='summary' />
-				<meta name='twitter:site' content='@sw_ts_k' />
-				<meta name='twitter:title' content={site_index_title} />
-				<meta name='twitter:description' content={site_index_description} />
-				<meta name='twitter:image' content={site_image_url} />
-
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-GTR2P2G0LD`}></script>
-				<script dangerouslySetInnerHTML={{
-					__html: `
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-						
-						gtag('config', 'G-GTR2P2G0LD');
-					`}}
-				/>
-			</Head>
-			<NextSeo
-				title={site_index_title}
-				description={site_index_description}
-				openGraph={{
-					url: site_index_url,
-					title: site_index_title,
-					description: site_index_description,
-					images: [
-						{
-							url: site_image_url,
-						},
-					],
-				}}
-			/>
+			<Seo title='tkのプロフィール -TOP-' description='tkのプロフィール：TOPページ' path='/' />
 			<Layout>
-				<div className='index_contents_container'>
-					<section className='hero_section'>
-						<div className='hero_image_wrapper'>
-							<Image
-								src='/event/event20220807.webp'
-								alt='20220807'
-								fill
-								style={{ objectFit: 'cover' }}
-								priority
-							/>
-							<div className='hero_overlay'></div>
+				<section className={styles.hero}>
+					<div className={styles.heroImage}>
+						<Image
+							src={heroImage}
+							alt='金沢21世紀美術館'
+							fill
+							sizes='(min-width: 1120px) 1056px, 100vw'
+							placeholder='blur'
+							priority
+							style={{ objectFit: 'cover' }}
+						/>
+					</div>
+					<div className={styles.heroText}>
+						<p className={styles.heroEyebrow}>Web Developer &amp; Engineer</p>
+						<h1 className={styles.heroTitle}>tk-profile</h1>
+						<p className={styles.heroLead}>
+							HR領域のWeb系企業でWeb開発エンジニアをしています。
+							<br />
+							これまでの開発実績や参加したイベントの写真をまとめています。
+						</p>
+						<div className={styles.heroActions}>
+							<Link href='/work' className={styles.buttonPrimary}>
+								開発実績を見る
+								<ArrowIcon />
+							</Link>
+							<Link href='/about' className={styles.buttonSecondary}>プロフィール</Link>
 						</div>
-						<div className='hero_content'>
-							{/*<h1 className='hero_title'>Welcome to my Portfolio</h1>*/}
-							<p className='hero_subtitle'>Web Developer & Engineer</p>
-						</div>
-					</section>
+					</div>
+				</section>
 
-					<section className='features_section'>
-						<div className='features_grid'>
-							{features.map((feature) => (
-								<article className='feature_card' key={feature.title}>
-									<div className='feature_card_image'>
+				<section className={common.section}>
+					<ul className={styles.features}>
+						{features.map((feature) => (
+							<li key={feature.title}>
+								<Link href={feature.href} className={styles.feature}>
+									<div className={styles.featureImage}>
 										<Image
 											src={feature.image}
 											alt={feature.alt}
 											fill
+											sizes='(min-width: 960px) 360px, (min-width: 640px) 33vw, 100vw'
+											placeholder='blur'
 											style={{ objectFit: 'cover' }}
 										/>
 									</div>
-									<div className='feature_card_content'>
-										<h2 className='feature_card_title'>{feature.title}</h2>
-										<p className='feature_card_description'>{feature.description}</p>
-										<Link href={feature.href} className='feature_card_link'>
-											{feature.linkText}
-											<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-												<path d="M5 12h14M12 5l7 7-7 7"/>
-											</svg>
-										</Link>
+									<div className={styles.featureBody}>
+										<h2 className={styles.featureTitle}>
+											{feature.title}
+											<ArrowIcon />
+										</h2>
+										<p className={styles.featureDescription}>{feature.description}</p>
 									</div>
-								</article>
-							))}
-						</div>
-					</section>
+								</Link>
+							</li>
+						))}
+					</ul>
+				</section>
 
-					<div className='index_content_link'>
-						<Link href='./privacy_policy'>プライバシーポリシー</Link>
+				<section className={common.section}>
+					<div className={common.sectionHeader}>
+						<h2 className={common.sectionTitle}>
+							<small>Recent Works</small>
+							最近の開発実績
+						</h2>
+						<Link href='/work' className={common.sectionLink}>
+							すべて見る
+							<ArrowIcon />
+						</Link>
 					</div>
-				</div>
+					<ul className={common.grid}>
+						{works.slice(0, 3).map((work) => (
+							<li key={work.slug}>
+								<WorkCard work={work} />
+							</li>
+						))}
+					</ul>
+				</section>
 			</Layout>
 		</>
 	)

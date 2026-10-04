@@ -1,0 +1,198 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	height: var(--header-height);
+	background: var(--color-header);
+	backdrop-filter: saturate(180%) blur(16px);
+	-webkit-backdrop-filter: saturate(180%) blur(16px);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.headerInner {
+	height: 100%;
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding: 0 var(--gutter);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+}
+
+.logoIcon {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: var(--radius-full);
+	overflow: hidden;
+	box-shadow: 0 0 0 1px var(--color-border);
+	transition: transform var(--duration-fast) var(--ease);
+}
+
+.logoIcon img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.logo:hover .logoIcon {
+	transform: rotate(-8deg) scale(1.05);
+}
+
+.logoText {
+	display: none;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: -0.02em;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.navLink {
+	padding: 6px 12px;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	color: var(--color-text-secondary);
+	border-radius: var(--radius-full);
+	transition: color var(--duration-fast) var(--ease), background-color var(--duration-fast) var(--ease);
+}
+
+.navLink:hover {
+	color: var(--color-text);
+	background: var(--color-surface-muted);
+}
+
+.navLinkActive,
+.navLinkActive:hover {
+	color: var(--color-accent);
+	background: var(--color-accent-soft);
+}
+
+.main {
+	min-height: calc(100vh - var(--header-height));
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding: 0 var(--gutter) 96px;
+}
+
+.footer {
+	border-top: 1px solid var(--color-border);
+	background: var(--color-surface);
+}
+
+.footerInner {
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding: 40px var(--gutter);
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.footerLogo {
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.footerNav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 24px;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	color: var(--color-text-secondary);
+}
+
+.footerNav a:hover {
+	color: var(--color-text);
+}
+
+.copyright {
+	font-size: 12px;
+	color: var(--color-text-muted);
+}
+
+.scrollTop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 40;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	color: var(--color-text);
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-full);
+	box-shadow: var(--shadow-md);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(8px);
+	transition: opacity var(--duration-normal) var(--ease), transform var(--duration-normal) var(--ease), visibility var(--duration-normal);
+}
+
+.scrollTopVisible {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.scrollTop:hover {
+	color: var(--color-accent);
+	transform: translateY(-2px);
+}
+
+.scrollTop svg {
+	width: 20px;
+	height: 20px;
+}
+
+@media (min-width: 400px) {
+	.logoText {
+		display: inline;
+	}
+}
+
+@media (min-width: 640px) {
+	.nav {
+		gap: 4px;
+	}
+
+	.navLink {
+		padding: 8px 16px;
+	}
+
+	.footerInner {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.copyright {
+		width: 100%;
+	}
+
+	.scrollTop {
+		right: 32px;
+		bottom: 32px;
+	}
+}
